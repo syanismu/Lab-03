@@ -14,7 +14,48 @@
             <p>For all inquires, please email using the form below.</p>
         </header>
 
+        <form action="thanks.html" netlify method="post">
+            <fieldset>
+                <legend>Your Information</legend>
+                <p>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" name="firstName" id="firstName">
+                </p>
 
+                <p>
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" name="lastName" id="lastName">
+                </p>
+
+                <p> 
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email">
+                </p>
+
+                <p> 
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" name="phone" id="phone">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reason for Contacting</legend>
+                <select name="reason" id="reason">
+                    <option value="careerOpportunity">Career Opportunity</option>
+                    <option value="businessProposal">Business Proposal</option>
+                    <option value="generalInquiry">General Inquiry</option>
+                </select>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <input type="text" size="100" name="message" id="message">
+                </p>
+            </fieldset>
+            
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
     </main>
 </body>
 </html>
